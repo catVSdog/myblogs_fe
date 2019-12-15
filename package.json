@@ -1,0 +1,28 @@
+{
+  "name": "myblogs_fe",
+  "version": "1.0.0",
+  "description": "myblogs front end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catVSdog/myblogs_fe.git"
+  },
+  "keywords": [
+    "vue",
+    "typescript",
+    "koa",
+    "graphql"
+  ],
+  "author": "catVSdog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/catVSdog/myblogs_fe/issues"
+  },
+  "homepage": "https://github.com/catVSdog/myblogs_fe#readme",
+  "dependencies": {
+    "koa": "^2.11.0"
+  }
+}
