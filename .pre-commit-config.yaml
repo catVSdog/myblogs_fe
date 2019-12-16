@@ -1,8 +1,10 @@
 - repo: https://github.com/pre-commit/mirrors-eslint
-  rev: "" # Use the sha / tag you want to point at
+  rev: "v6.7.2" 
   hooks:
       - id: eslint
         additional_dependencies:
             - eslint
             - eslint-config-airbnb-base
             - eslint-plugin-vue
+            - eslint-plugin-react@6.10.3
+            - babel-eslint@6.1.2
