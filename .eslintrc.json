@@ -5,8 +5,10 @@
         "node": true
     },
     "extends": [
-        "plugin:vue/essential",
-        "airbnb-base"
+        "alloy",
+        "alloy/typescript",
+        "alloy/vue",
+        "eslint:recommended"
     ],
     "globals": {
         "Atomics": "readonly",

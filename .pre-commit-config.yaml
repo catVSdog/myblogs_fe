@@ -1,9 +1,0 @@
-repos:
--   repo: https://github.com/pre-commit/mirrors-eslint
-    sha: v6.7.2
-    hooks:
-    -       id: eslint
-            additional_dependencies:
-                - eslint
-                - eslint-config-airbnb-base
-                - eslint-plugin-vue
