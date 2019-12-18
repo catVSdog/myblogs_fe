@@ -1,17 +1,16 @@
-/* eslint-disable @typescript-eslint/explicit-member-accessibility */
-import * as Koa from "koa";
-import * as KoaRouter from "koa-router";
+import * as Koa from 'koa';
+import * as KoaRouter from 'koa-router';
 
 class ManagerApp {
-    app: Koa;
-    router: KoaRouter;
+    public app: Koa;
+    public router: KoaRouter;
 
-    constructor() {
+    public constructor() {
         this.app = new Koa();
         this.router = new KoaRouter();
     }
 
-    configApp() {
+    public configApp() {
         this.app.use(this.router.routes());
     }
 }

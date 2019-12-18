@@ -1,9 +1,7 @@
-const path = require('path');
+const path = import("path");
 
-module.exports = {
-    entry: './server_source/app.ts',
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
-    }
+export const entry = "./server_source/app.ts";
+export const output = {
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist")
 };
