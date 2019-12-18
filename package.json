@@ -4,7 +4,7 @@
     "description": "myblogs front end",
     "main": "index.js",
     "scripts": {
-        "lint": "eslint  server_source/  --ext   .ts   --ext .vue  --fix"
+        "lint": "eslint  server_source/  --ext .ts   --ext .vue  --fix"
     },
     "pre-commit": [
         "lint"
