@@ -18,6 +18,7 @@
         "no-dupe-else-if": "off",
         "no-import-assign": "off",
         "no-setter-return": "off",
-        "prefer-regex-literals": "off"
+        "prefer-regex-literals": "off",
+        "@typescript-eslint/no-require-imports":"off"
     }
 }

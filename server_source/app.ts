@@ -1,11 +1,11 @@
-import * as Koa from 'koa';
-import * as KoaRouter from 'koa-router';
-import * as bodyParse from 'koa-bodyparser';
-import * as mount from 'koa-mount';
-import * as koaServer from 'koa-static';
-import * as path from 'path';
-import * as compress from 'koa-compress';
-import * as zlib from 'zlib';
+import Koa  = require('koa');
+import  KoaRouter  = require('koa-router');
+import  bodyParse = require('koa-bodyparser');
+import  mount = require('koa-mount');
+import  koaServer =  require('koa-static');
+import  path =require('path');
+import  compress= require('koa-compress');
+import  zlib =require('zlib');
 
 class ManagerApp {
     app: Koa;
