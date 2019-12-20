@@ -1,4 +1,5 @@
-
+const path = require('path');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 module.exports = {
     mode: 'development',
     devtool: 'eval-source-map',
@@ -14,7 +15,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.vue(\?.*)?$/,
+                test: /\.vue$/,
                 loader: 'vue-loader',
             },
             {
