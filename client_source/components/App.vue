@@ -1,5 +1,5 @@
 <template>
-    <router-view></router-view>
+    <h1> hello {{ msg }}</h1>
 </template>
 
 
@@ -7,7 +7,11 @@
 import Vue from 'vue';
 
 export default  Vue.extend({
-
+    data() {
+        return {
+            msg: 'vue'
+        }
+    }
 })
 </script>
 
