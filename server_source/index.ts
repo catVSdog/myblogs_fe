@@ -1,11 +1,12 @@
-import { ApolloServer, gql  } from 'apollo-server-koa';
+import { ApolloServer, gql } from 'apollo-server-koa';
 import { app } from './app';
 
 // noly used to init server in dev env
 const typeDefs = gql`
     type Query {
         hello: String
-    }`;
+    }
+`;
 const resolvers = {
     Query: {
         hello: () => 'Hello world!'

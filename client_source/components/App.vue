@@ -1,17 +1,15 @@
 <template>
-    <h1> hello {{ msg }}</h1>
+    <h1></h1>
 </template>
 
-
-<script>
+<script lang="ts">
 import Vue from 'vue';
 
-export default  Vue.extend({
+export default {
     data() {
         return {
             msg: 'vue'
-        }
+        };
     }
-})
+};
 </script>
-

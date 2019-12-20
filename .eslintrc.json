@@ -4,7 +4,11 @@
         "es6": true,
         "node": true
     },
-    "extends": ["alloy", "alloy/typescript", "alloy/vue"],
+    "extends": [
+        "alloy",
+        "alloy/typescript",
+        "alloy/vue"
+    ],
     "parserOptions": {
         "ecmaVersion": 2018,
         "parser": "@typescript-eslint/parser",
@@ -19,6 +23,6 @@
         "no-import-assign": "off",
         "no-setter-return": "off",
         "prefer-regex-literals": "off",
-        "@typescript-eslint/no-require-imports":"off"
+        "@typescript-eslint/no-require-imports": "off"
     }
 }
