@@ -3,7 +3,7 @@ import App from './components/App.vue';
 
 const app = new Vue({
     el: '#app',
-    render: createElement => createElement(App),
+    render: (createElement) => createElement(App)
 });
 
 export default app;
