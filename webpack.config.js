@@ -6,10 +6,11 @@ const tsImportPluginFactory = require('ts-import-plugin');
 module.exports = {
     mode: 'development',
     devtool: 'eval-source-map',
-    entry: './client_source/index.ts',
+    entry: {
+        app: './client_source/index.ts'
+    },
     output: {
         path: path.resolve(__dirname, './client_dist'),
-        publicPath: '/',
         filename: '[name].js'
     },
     resolve: {
@@ -18,11 +19,19 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: 'file-loader'
+            },
+            {
                 test: /\.vue$/,
                 loader: 'vue-loader'
             },
             {
-                test: /\.ts(\?.*)?$/,
+                test: /\.ts$/,
                 loader: 'ts-loader',
                 exclude: /node_modules/,
                 options: {

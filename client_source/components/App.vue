@@ -1,15 +1,11 @@
 <template>
-    <h1></h1>
+    <route-view></route-view>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 
 export default {
-    data() {
-        return {
-            msg: 'vue'
-        };
-    }
+    name: 'App'
 };
 </script>
