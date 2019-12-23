@@ -3,15 +3,13 @@ import Layout from './components/Layout.vue';
 
 const routers: RouteConfig[] = [
     {
-        path: '/z',
+        path: '/',
         component: Layout,
         name: 'Layout'
     }
 ];
 
 const router = new VueRouter({
-    mode: 'history',
-    base: '/',
     routes: routers
 });
 
