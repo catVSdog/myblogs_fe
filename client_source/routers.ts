@@ -6,14 +6,13 @@ const routers: RouteConfig[] = [
         path: '/z',
         component: Layout,
         name: 'Layout'
-    },
-    {
-        path: '/main'
     }
 ];
 
 const router = new VueRouter({
-    routers
+    mode: 'history',
+    base: '/',
+    routes: routers
 });
 
 export default router;
