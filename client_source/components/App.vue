@@ -6,7 +6,6 @@
 import Vue from 'vue';
 import { Container, Footer, Main, Header, Aside } from 'element-ui';
 import VueRouter from 'vue-router';
-import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.use(Container);
 Vue.use(Footer);
@@ -24,4 +23,5 @@ export default {
 * {
     box-sizing: border-box;
 }
+@import '~element-ui/lib/theme-chalk/index.css';
 </style>
