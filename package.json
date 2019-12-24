@@ -28,14 +28,20 @@
     "homepage": "https://github.com/catVSdog/myblogs_fe#readme",
     "dependencies": {
         "@types/koa-mount": "^4.0.0",
+        "apollo-cache-inmemory": "^1.6.5",
+        "apollo-client": "^2.6.8",
+        "apollo-link": "^1.2.13",
+        "apollo-link-http": "^1.5.16",
         "apollo-server-koa": "^2.9.14",
         "graphql": "^14.5.8",
+        "graphql-tag": "^2.10.1",
         "koa": "^2.11.0",
         "koa-bodyparser": "^4.2.1",
         "koa-compress": "^3.0.0",
         "koa-mount": "^4.0.0",
         "koa-router": "^7.4.0",
-        "koa-static": "^5.0.0"
+        "koa-static": "^5.0.0",
+        "vue-apollo": "^3.0.2"
     },
     "devDependencies": {
         "@koa/router": "^8.0.5",

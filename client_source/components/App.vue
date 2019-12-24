@@ -30,6 +30,12 @@ Vue.use(Image);
 /* vue-router 插件 */
 Vue.use(VueRouter);
 
+
+// apollo
+import VueApollo from 'vue-apollo'
+Vue.use(VueApollo)
+
+
 export default {
     name: 'App'
 };
