@@ -39,6 +39,7 @@ module.exports = {
                     transpileOnly: true
                 }
             },
+            { test: /\.gql$/, use: 'graphql-tag/loader' },
             {
                 test: /\.s[ac]ss$/i,
                 use: [
