@@ -1,20 +1,18 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const tsImportPluginFactory = require('ts-import-plugin');
 
 module.exports = {
     mode: 'development',
     devtool: 'eval-source-map',
-    entry: {
-        app: './client_source/index.ts'
-    },
+    entry: { app: ['./client_source/index.ts'] },
     output: {
         path: path.resolve(__dirname, './client_dist'),
-        filename: '[name].js'
+        filename: '[name].js',
+        publicPath: '/'
     },
     resolve: {
-        extensions: ['.ts', '.js', '.tsx']
+        extensions: ['.ts', '.js', '.tsx', 'vue', 'gql']
     },
     module: {
         rules: [

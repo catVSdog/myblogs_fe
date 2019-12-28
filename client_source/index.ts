@@ -1,7 +1,7 @@
 import Vue from 'vue';
-import App from './components/App.vue';
+import App from './components/app.vue';
 import router from './routers';
-import apolloProvider from './apolloConfig';
+import apolloProvider from './apollo-config';
 
 const app = new Vue({
     el: '#app',

@@ -6,6 +6,7 @@ import koaServer = require('koa-static');
 import path = require('path');
 import compress = require('koa-compress');
 import zlib = require('zlib');
+import koaWebpack = require('koa-webpack');
 
 class ManagerApp {
     app: Koa;
@@ -14,9 +15,11 @@ class ManagerApp {
     constructor() {
         this.app = new Koa();
         this.router = new KoaRouter();
+        
     }
 
-    configApp() {
+    async configApp() {
+        this.app.use( await koaWebpack())
         this.app.use(this.router.routes());
         this.app.use(bodyParse());
         this.app.use(mount('/', koaServer(path.resolve(__dirname, '../client_dist'))));

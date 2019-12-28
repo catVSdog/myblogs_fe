@@ -1,15 +1,15 @@
 import VueRouter, { RouteConfig } from 'vue-router';
-import leftAside from './components/LeftAside.vue';
-import master from './components/Master.vue';
-import rightAside from './components/RightAside.vue';
+import LeftAaide from './components/left-aside.vue';
+import Main from './components/main.vue';
+import RightAside from './components/right-aside.vue';
 
 const routers: RouteConfig[] = [
     {
         path: '',
         components: {
-            leftAside: leftAside,
-            master: master,
-            rightAside: rightAside
+            left: LeftAaide,
+            main: Main,
+            right: RightAside
         }
     }
 ];

@@ -1,13 +1,13 @@
 <template>
     <el-container>
         <el-aside>
-            <router-view name="leftAside"></router-view>
+            <router-view name="left"></router-view>
         </el-aside>
         <el-main>
-            <router-view name="master"></router-view>
+            <router-view name="main"></router-view>
         </el-main>
         <el-aside>
-            <router-view name="rightAside"></router-view>
+            <router-view name="right"></router-view>
         </el-aside>
     </el-container>
 </template>

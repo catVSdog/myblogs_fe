@@ -12,7 +12,7 @@
 <script lang="ts">
 import Vue from 'vue';
 export default Vue.extend({
-    name: 'leftAside',
+    name: 'LeftAside',
     data: function() {
         return {
             src: 'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg',
