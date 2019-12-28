@@ -1,15 +1,5 @@
 <template>
-    <el-container>
-        <el-aside>
-            <router-view name="left"></router-view>
-        </el-aside>
-        <el-main>
-            <router-view name="main"></router-view>
-        </el-main>
-        <el-aside>
-            <router-view name="right"></router-view>
-        </el-aside>
-    </el-container>
+    <router-view></router-view>
 </template>
 
 <script lang="ts">
@@ -22,7 +12,10 @@ import {
     Aside,
     Calendar,
     Image,
-    InfiniteScroll
+    InfiniteScroll,
+    Icon,
+    Carousel,
+    CarouselItem
 } from 'element-ui';
 import VueRouter from 'vue-router';
 
@@ -36,17 +29,33 @@ Vue.use(Aside);
 Vue.use(Calendar);
 Vue.use(InfiniteScroll);
 Vue.use(Image);
+Vue.use(Icon);
+Vue.use(Carousel);
+Vue.use(CarouselItem);
+
+/* 图标插件 */
+import vIcon from 'vue-awesome/components/Icon.vue';
+Vue.component('v-icon', vIcon);
+import 'vue-awesome/icons/heart';
 
 /* vue-router 插件 */
 Vue.use(VueRouter);
+
+/* meta 插件 */
+import VueMeta from 'vue-meta';
+Vue.use(VueMeta);
 
 // apollo
 import VueApollo from 'vue-apollo';
 Vue.use(VueApollo);
 
-export default {
-    name: 'App'
-};
+export default Vue.extend({
+    name: 'App',
+    metaInfo: {
+        title: 'myblog',
+        titleTemplate: '%s  | MyBlog'
+    }
+});
 </script>
 
 <style lang="scss">

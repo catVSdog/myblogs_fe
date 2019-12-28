@@ -1,22 +1,21 @@
 <template>
-    <h1>
-        <p>hello</p>
-        world
-    </h1>
+    <post-container></post-container>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import PostContainer from './post-container.vue';
 
 export default Vue.extend({
     name: 'Main',
-    data: function() {
-        return { count: 0, world: 'world' };
+    metaInfo: {
+        title: 'mains'
     },
-    methods: {
-        load: function() {
-            this.count += 2;
-        }
+    components: {
+        'post-container': PostContainer
+    },
+    data: function() {
+        return {};
     }
 });
 </script>

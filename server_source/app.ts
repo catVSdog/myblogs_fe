@@ -15,11 +15,10 @@ class ManagerApp {
     constructor() {
         this.app = new Koa();
         this.router = new KoaRouter();
-        
     }
 
     async configApp() {
-        this.app.use( await koaWebpack())
+        this.app.use(await koaWebpack());
         this.app.use(this.router.routes());
         this.app.use(bodyParse());
         this.app.use(mount('/', koaServer(path.resolve(__dirname, '../client_dist'))));

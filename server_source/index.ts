@@ -2,8 +2,8 @@ import { ApolloServer, gql } from 'apollo-server-koa';
 import { app } from './app';
 
 // noly used to init server in dev env
-import typeDefines from './graphql_type_defs/hello';
-import res from './graphql_resolvers/hello';
+import typeDefines from './graphql_type_defs/tags';
+import res from './graphql_resolvers/tags';
 
 const server = new ApolloServer({ typeDefs: [typeDefines], resolvers: [res] });
 server.applyMiddleware({ app });

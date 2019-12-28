@@ -2,7 +2,7 @@ import { gql } from 'apollo-server-koa';
 
 const typeDefines = gql`
     type Query {
-        hello: String
+        tag: String
     }
 `;
 export default typeDefines;
