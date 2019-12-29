@@ -49,11 +49,12 @@ $padding: 0;
         .el-aside {
             border: 1px solid red;
             width: 30% !important;
-            margin-right: 5%;
+            margin-right: 40px;
         }
         .el-main {
             border: 1px solid blue;
             width: 65%;
+            padding: 0 20px;
         }
     }
 }

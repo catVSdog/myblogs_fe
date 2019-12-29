@@ -4,11 +4,7 @@
         "es6": true,
         "node": true
     },
-    "extends": [
-        "alloy",
-        "alloy/typescript",
-        "alloy/vue"
-    ],
+    "extends": ["alloy", "alloy/typescript", "alloy/vue"],
     "parserOptions": {
         "ecmaVersion": 2018,
         "parser": "@typescript-eslint/parser",

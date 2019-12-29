@@ -5,15 +5,8 @@
         "target": "es5",
         "strict": true,
         "moduleResolution": "node",
-        "lib": [
-            "dom",
-            "es2015",
-            "esnext.asynciterable",
-            "es7"
-        ],
+        "lib": ["dom", "es2015", "esnext.asynciterable", "es7"],
         "outDir": "../client_dist"
     },
-    "include": [
-        "./**/*"
-    ]
+    "include": ["./**/*"]
 }

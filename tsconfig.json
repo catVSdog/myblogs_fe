@@ -1,7 +1,7 @@
 {
-  "compilerOptions": {
-    "sourceMap": true,
-    "noEmitOnError": true,
-    "esModuleInterop": true
-  }
+    "compilerOptions": {
+        "sourceMap": true,
+        "noEmitOnError": true,
+        "esModuleInterop": true
+    }
 }

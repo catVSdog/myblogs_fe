@@ -13,6 +13,7 @@ import Vue from 'vue';
 import Family from '../assets/welcome-pics/family.jpg';
 import Earth from '../assets/welcome-pics/earth.jpg';
 import Flower from '../assets/welcome-pics/flower.jpg';
+import Water from '../assets/welcome-pics/water.jpg';
 
 export default Vue.extend({
     name: 'Welcome',
@@ -21,7 +22,7 @@ export default Vue.extend({
     },
     data: function() {
         return {
-            pictures: [Family, Earth, Flower]
+            pictures: [Family, Earth, Flower, Water]
         };
     }
 });
