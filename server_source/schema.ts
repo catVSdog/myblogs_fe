@@ -1,4 +1,7 @@
-const typeDefines = [];
-const resolvers = [];
+import tagResolver from './graphql_resolvers/tags';
+import tagDefine from './graphql_type_defs/tags';
 
-export { typeDefines, resolvers };
+const schs = [tagDefine];
+const res = [tagResolver];
+
+export { schs, res };

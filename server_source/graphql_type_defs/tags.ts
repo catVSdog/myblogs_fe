@@ -1,8 +1,12 @@
 import { gql } from 'apollo-server-koa';
 
-const typeDefines = gql`
+const typeDefs = gql`
     type Query {
-        tag: String
+        tags: [Tag]
+    }
+    type Tag {
+        t_id: Int
+        name: String
     }
 `;
-export default typeDefines;
+export default typeDefs;

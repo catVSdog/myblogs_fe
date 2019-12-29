@@ -1,0 +1,6 @@
+query getTags {
+    tags {
+        t_id
+        name
+    }
+}
