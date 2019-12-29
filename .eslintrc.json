@@ -19,6 +19,7 @@
         "no-import-assign": "off",
         "no-setter-return": "off",
         "prefer-regex-literals": "off",
-        "@typescript-eslint/no-require-imports": "off"
+        "@typescript-eslint/no-require-imports": "off",
+        " max-params": { "max": 22 }
     }
 }

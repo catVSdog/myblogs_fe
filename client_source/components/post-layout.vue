@@ -44,7 +44,7 @@ $padding: 0;
         width: 90%;
         margin: 60px auto auto auto;
         border: 1px solid yellow;
-        padding: 85px;
+        padding: 60px;
 
         .el-aside {
             border: 1px solid red;
