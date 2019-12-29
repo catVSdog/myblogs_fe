@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "lint": "eslint  server_source/   --ext .ts    --ext  .vue  --fix",
-        "dev": "rm -rf *_dist && npx nodemon -w ./server_source/. -e ts -x 'npx ts-node -P ./server_source/tsconfig.json ./server_source/index.ts '"
+        "build-client": "rm -rf client_dist && webpack",
+        "dev": "rm -rf *_dist && npx nodemon -w ./server_source/. -e ts -x 'ts-node -P ./server_source/tsconfig.json ./server_source/index.ts '"
     },
     "pre-commit": [
         "lint"
@@ -61,6 +62,7 @@
         "eslint-config-alloy": "^3.4.0",
         "eslint-plugin-import": "^2.19.1",
         "eslint-plugin-vue": "^6.0.1",
+        "file-loader": "^5.0.2",
         "html-webpack-plugin": "^3.2.0",
         "koa-webpack": "^5.2.4",
         "node-sass": "^4.13.0",

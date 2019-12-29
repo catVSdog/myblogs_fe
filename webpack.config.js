@@ -12,7 +12,10 @@ module.exports = {
         publicPath: '/'
     },
     resolve: {
-        extensions: ['.ts', '.js', '.tsx', 'vue', 'gql']
+        extensions: ['.ts', '.js', '.tsx', 'vue', 'gql','jpg'],
+        alias: {
+            'static':path.resolve(__dirname, './static'),
+        }
     },
     module: {
         rules: [

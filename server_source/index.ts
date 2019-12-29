@@ -1,4 +1,4 @@
-import { ApolloServer, gql } from 'apollo-server-koa';
+import { ApolloServer } from 'apollo-server-koa';
 import { app } from './app';
 
 // noly used to init server in dev env
