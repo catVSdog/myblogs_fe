@@ -34,7 +34,6 @@ export default Vue.extend({
             const result = await this.$apollo.query({
                 query: getTags
             });
-            console.log(result);
             this.tags = result.data.tags;
         }
     }

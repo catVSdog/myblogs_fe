@@ -1,9 +1,9 @@
 /* eslint-disable max-params */
-const axios = require('axios');
+import axios from 'axios';
 
 const resolvers = {
     Query: {
-        async tags(parent, args, context, z) {
+        async tags(parent, args, context, info) {
             try {
                 const result = await axios.get('http://localhost:8000/tags');
                 return result.data;
