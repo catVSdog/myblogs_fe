@@ -1,6 +1,7 @@
 query getTags {
     tags {
-        t_id
+        id
         name
+        shortName
     }
 }
