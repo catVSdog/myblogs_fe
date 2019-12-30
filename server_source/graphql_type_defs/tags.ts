@@ -5,8 +5,9 @@ const typeDefs = gql`
         tags: [Tag]
     }
     type Tag {
-        t_id: Int
+        id: Int
         name: String
+        shortName: String
     }
 `;
 export default typeDefs;
